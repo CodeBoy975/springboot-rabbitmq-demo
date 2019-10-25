@@ -71,4 +71,11 @@ public class RabbitMqTopicConfig {
         return BindingBuilder.bind(queueMessages).to(exchange).with("topic.#");
     }
 
+    /**
+     * 測試一下版本回退
+     */
+    public void test() {
+        System.out.println("測試一下版本回退");
+    }
+
 }
